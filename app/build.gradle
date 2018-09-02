@@ -37,6 +37,8 @@ dependencies {
     // a lightweight library full of helpers for intents, dialogs, logging and so on;
     implementation "org.jetbrains.anko:anko-design:0.10.2" // For SnackBars
     implementation 'com.mikhaellopez:circularimageview:3.2.0'//circular imageview lib
+    testImplementation 'org.mockito:mockito-core:2.8.9'//the popular Java mocking library
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version" //provides us with the needed assertion methods.
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
