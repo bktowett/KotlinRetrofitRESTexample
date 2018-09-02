@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.UserDetailsActivity"
+    tools:showIn="@layout/activity_user_details">
+<LinearLayout
+    android:id="@+id/llSearchView"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:padding="2dp"
+        android:id="@+id/etUsername"
+        android:layout_weight="1"
+        android:hint="@string/enter_username"
+        android:layout_width="0dp"
+        android:layout_height="45dp"/>
+    <Button
+        android:padding="2dp"
+        android:id="@+id/btSearch"
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"/>
+</LinearLayout>
+    <include layout="@layout/profile_view"/>
+</LinearLayout>
