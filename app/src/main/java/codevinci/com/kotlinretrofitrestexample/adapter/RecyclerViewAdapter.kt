@@ -22,8 +22,8 @@ class RecyclerViewAdapter(var context: Context, var list: List<RecyclerViewItems
         //handle clicks
         holder.tvText.setOnClickListener{view->
             if(list[position].link!!.isNotBlank()){
-                val intents = Intent(Intent.ACTION_VIEW, Uri.parse(list[position].link))
-                context.startActivity(intents)
+                /*val intents = Intent(Intent.ACTION_VIEW, Uri.parse(list[position].link))
+                context.startActivity(intents)*/
             }
         }
 
